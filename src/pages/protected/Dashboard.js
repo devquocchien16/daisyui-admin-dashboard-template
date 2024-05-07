@@ -9,8 +9,6 @@ function InternalPage(){
     useEffect(() => {
         dispatch(setPageTitle({ title : "Dashboard"}))
       }, [])
-
-
     return(
         <Dashboard />
     )

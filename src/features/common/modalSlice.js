@@ -10,7 +10,6 @@ export const modalSlice = createSlice({
         extraObject : {},   
     },
     reducers: {
-
         openModal: (state, action) => {
             const {title, bodyType, extraObject, size} = action.payload
             state.isOpen = true

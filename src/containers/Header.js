@@ -26,11 +26,7 @@ function Header(){
                 setCurrentTheme("light")
             }
         }
-        // 👆 false parameter is required for react project
       }, [])
-
-
-    // Opening right sidebar for notification
     const openNotification = () => {
         dispatch(openRightDrawer({header : "Notifications", bodyType : RIGHT_DRAWER_TYPES.NOTIFICATION}))
     }
@@ -46,9 +42,6 @@ function Header(){
         
         <>
             <div className="navbar sticky top-0 bg-base-100  z-10 shadow-md ">
-
-
-                {/* Menu toogle for mobile view or small screen */}
                 <div className="flex-1">
                     <label htmlFor="left-sidebar-drawer" className="btn btn-primary drawer-button lg:hidden">
                     <Bars3Icon className="h-5 inline-block w-5"/></label>
@@ -102,7 +95,6 @@ function Header(){
                             <span className="badge">New</span>
                             </Link>
                         </li>
-                        <li className=''><Link to={'/app/settings-billing'}>Bill History</Link></li>
                         <div className="divider mt-0 mb-0"></div>
                         <li><a onClick={logoutUser}>Logout</a></li>
                     </ul>
